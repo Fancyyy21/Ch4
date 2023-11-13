@@ -1,5 +1,5 @@
-export let URLGeoJson = "https://asia-southeast2-annular-hexagon-401501.cloudfunctions.net/BuatAmbilDataGeojson";
-export let URLPostPoint = "https://asia-southeast2-annular-hexagon-401501.cloudfunctions.net/BuatGeojsonPoint";
+export let URLGeoJson = "https://asia-southeast2-annular-hexagon-401501.cloudfunctions.net/BuatAmbilDataGeojsonToken";
+export let URLPostPoint = "https://asia-southeast2-annular-hexagon-401501.cloudfunctions.net/BuatGeojsonPointToken";
 export let tableTag="tr";
 export let tableRowClass="content is-small";
 export let tableTemplate=`
