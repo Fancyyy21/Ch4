@@ -11,38 +11,50 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Revolve - Personal Magazine blog Template</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="./source/images/favicon1.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     
     <!-- THEME CSS
 	================================================== -->
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="./theme/plugins/bulma/bulma.min.css">
+    <link rel="stylesheet" href="plugins/bulma/bulma.min.css">
     <!-- Themify -->
-    <link rel="stylesheet" href="./theme/plugins/themify/css/themify-icons.css">
-    <link rel="stylesheet" href="./theme/plugins/slick-carousel/slick-theme.css">
-    <link rel="stylesheet" href="./theme/plugins/slick-carousel/slick.css">
+    <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick-theme.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick.css">
     <!-- Slick Carousel -->
-    <link rel="stylesheet" href="./theme/plugins/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="./theme/plugins/owl-carousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./theme/plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
     <!-- manin stylesheet -->
-    <link rel="stylesheet" href="./theme/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header-top bg-dark">
+<div class="header-logo py-5 is-hidden is-block-desktop">
+   <div class="container">
+      <div class="columns is-gapless">
+         <div class="column has-text-centered">
+            <a class="is-inline-block" href="index-4.html">
+               <img src="images/logo.png" alt="" class="">
+            </a>
+         </div>
+      </div>
+   </div>
+</div>
+
+<header class="header-top bg-grey">
    <div class="container">
       <div class="columns is-gapless">
          <div class="column is-12">
-            <nav class="navbar navigation navigation-dark">
-               <div class="navbar-brand">
-                  <a class="navbar-item" href="index-5.html">
-                     <img src="./theme/images/logo-w.png" alt="">
+            <nav class="navbar navigation">
+               <div class="navbar-brand is-hidden-desktop">
+                  <a class="navbar-item" href="index-4.html">
+                     <img src="images/logo.png" alt="">
                   </a>
             
                   <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="menu1">
@@ -53,21 +65,57 @@
                </div>
             
                <div id="menu1" class="navbar-menu">
-                  <div class="navbar-start mr-0">
-                     <div class="navbar-item">
-                        <a class="navbar-link" href="./login">sign in</a>
+                  <div class="navbar-start ml-0">
+                     <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link" href="#!">Home</a>
+                        <div class="navbar-dropdown">
+                           <a class="navbar-item" href="index.html">Home 1</a>
+                           <a class="navbar-item" href="index-2.html">Home 2</a>
+                           <a class="navbar-item" href="index-3.html">Home 3</a>
+                           <a class="navbar-item" href="index-4.html">Home 4</a>
+                           <a class="navbar-item" href="index-5.html">Home 5</a>
+                           <a class="navbar-item" href="index-6.html">Home 6</a>
+                        </div>
+                     </div>
+
+                     <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link" href="#!">Blog Posts</a>
+                        <div class="navbar-dropdown">
+                           <a class="navbar-item" href="standard-fullwidth.html">Standard Fullwidth</a>
+                           <a class="navbar-item" href="standard-left-sidebar.html">Standard Left Sidebar</a>
+                           <a class="navbar-item" href="standard-right-sidebar.html">Standard Right Sidebar</a>
+                        </div>
                      </div>
 
                      <div class="navbar-item">
-                        <a class="navbar-link" href="./registrasi">sign up</a>
+                        <a class="navbar-link" href="about.html">About</a>
+                     </div>
+
+                     <div class="navbar-item">
+                        <a class="navbar-link" href="fashion.html">Category</a>
+                     </div>
+
+                     <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link" href="#!">Post Format</a>
+                        <div class="navbar-dropdown">
+                           <a class="navbar-item" href="post-video.html">Video Formats</a>
+                           <a class="navbar-item" href="post-audio.html">Audio Format</a>
+                           <a class="navbar-item" href="post-link.html">Quote Format</a>
+                           <a class="navbar-item" href="post-gallery.html">Gallery Format</a>
+                           <a class="navbar-item" href="post-image.html">Image Format</a>
+                        </div>
+                     </div>
+
+                     <div class="navbar-item">
+                        <a class="navbar-link" href="contact.html">Contact</a>
                      </div>
                   </div>
             
                   <div class="navbar-end">
                      <div class="navbar-item">
-                       <div class="search ml-4">
-                           <div class="search_toggle"><i class="ti-search text-white"></i></div>
-                       </div>
+                        <div class="search">
+                           <div class="search_toggle"><i class="ti-search"></i></div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -98,13 +146,26 @@
 </div>
 <!--search overlay end-->
 
+<div class="breadcrumb-wrapper">
+    <div class="container">
+        <div class="columns">
+            <div class="column sm-12">
+                <div class="has-text-centered">
+                   <h2 class="lg-title">About Me</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <section class="pt-5 padding-bottom">
 	<div class="container">
 		<div class="columns">
 			<div class="column is-12">
 				<div class="columns">
 	<div class="column is-12">
-		<img src="./theme/images/about.jpg" alt="" class=" w-100">
+		<img src="images/about.jpg" alt="" class=" w-100">
 	</div>
 </div>
 
@@ -141,25 +202,25 @@
 		<div class="columns is-multiline">
 			<div class="column is-3-desktop is-6-tablet">
 				<div class="about-widget">
-					<img src="./theme/images/news/news-1.jpg" alt="" class="">
+					<img src="images/news/news-1.jpg" alt="" class="">
 					<h4 class="mt-4">Hill ward</h4>
 				</div>
 			</div>
 			<div class="column is-3-desktop is-6-tablet">
 				<div class="about-widget">
-					<img src="./theme/images/news/news-2.jpg" alt="" class="">
+					<img src="images/news/news-2.jpg" alt="" class="">
 					<h4 class="mt-4">Awesome ride</h4>
 				</div>
 			</div>
 			<div class="column is-3-desktop is-6-tablet">
 				<div class="about-widget">
-					<img src="./theme/images/news/news-3.jpg" alt="" class="">
+					<img src="images/news/news-3.jpg" alt="" class="">
 					<h4 class="mt-4">Newyork</h4>
 				</div>
 			</div>
 			<div class="column is-3-desktop is-6-tablet">
 				<div class="about-widget">
-					<img src="./theme/images/news/news-4.jpg" alt="" class="">
+					<img src="images/news/news-4.jpg" alt="" class="">
 					<h4 class="mt-4">Rising Sea</h4>
 				</div>
 			</div>
@@ -177,7 +238,7 @@
         <div class="columns is-multiline">
             <div class="column is-12 has-text-centered">
                 <div class="mb-5">
-                    <h2 class="footer-logo">Philander News.</h2>
+                    <h2 class="footer-logo">Revolve.</h2>
                 </div>
                 <ul class="list-inline footer-socials mb-0">
                     <li class="list-inline-item"><a href="#"><i class="ti-facebook mr-2"></i>Facebook</a></li>
@@ -191,7 +252,7 @@
             </div>
        
             <div class="column is-12 has-text-centered">
-               <p class="copyright">© Copyright 2019 - Philander News. All Rights Reserved.</p>
+               <p class="copyright">© Copyright 2019 - Revolve. All Rights Reserved.</p>
             </div>
         </div>
     </div>
@@ -201,13 +262,18 @@
 <!-- THEME JAVASCRIPT FILES
 ================================================== -->
 <!-- initialize jQuery Library -->
-<script type="module" src="./theme/plugins/jquery/jquery.js"></script>
+<script src="plugins/jquery/jquery.js"></script>
 <!-- Owl caeousel -->
-<script type="module" src="./theme/plugins/owl-carousel/owl.carousel.min.js"></script>
-<script type="module" src="./theme/plugins/slick-carousel/slick.min.js"></script>
-<script type="module" src="./theme/plugins/magnific-popup/magnific-popup.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+<script src="plugins/slick-carousel/slick.min.js"></script>
+<script src="plugins/magnific-popup/magnific-popup.js"></script>
+<!-- Instagram Feed Js -->
+<script src="plugins/instafeed-js/instafeed.min.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+<script src="plugins/google-map/gmap.js"></script>
 <!-- main js -->
-<script type="module" src="./theme/js/custom.js"></script>
+<script src="js/custom.js"></script>
 
 
 </body>
