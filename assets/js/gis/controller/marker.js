@@ -34,6 +34,34 @@ export function insertMarker(name,long,lat,volume){
     map.addLayer(vectorLayer);
 }
 
+export function insertMarker(name,long,lat,volume){
+  let marker = new Feature({
+      type: 'icon',
+      id : idmarker.id,
+      name : name,
+      volume : volume,
+      geometry: new Polyline(fromLonLat([long, lat],[long, lat],[long, lat])),
+  });
+  marker.setStyle(
+      new Style({
+        image: new Icon({
+          anchor: [0.5, 46],
+          anchorXUnits: 'fraction',
+          anchorYUnits: 'pixels',
+          src: 'img/icon.png',
+        }),
+      })
+    );
+  let vectorSource = new VectorSource({
+      features: [marker],
+  });
+  
+  let vectorLayer = new VectorLayer({
+  source: vectorSource,
+  });
+  map.addLayer(vectorLayer);
+}
+
 export function deleteMarker(idmarker){
     let i=0;
     let sudahhapus=0;
