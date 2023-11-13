@@ -6,6 +6,7 @@ import {insertMarker,deleteMarker} from './marker.js';
 import {setInner,textBlur, getValue,setValue} from '../../element.js';
 import { postBiasa } from "../../api.js";
 import {URLPostPoint} from '../template/template.js'
+import {URLPostPolyline} from '../template/template.js'
 
 
 export function onClosePopupClick() {
