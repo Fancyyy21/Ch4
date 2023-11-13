@@ -33,169 +33,63 @@
     <!-- manin stylesheet -->
     <link rel="stylesheet" href="./theme/css/style.css">
 </head>
+<style>
+   body {
+       margin: 0; /* Menghapus margin default pada body */
+       padding: 0; /* Menghapus padding default pada body */
+       font-family: Arial, sans-serif; /* Menggunakan font Arial atau font sans-serif */
+   }
+
+   .back-button {
+       position: absolute;
+       top: 10px; /* Jarak dari atas sebanyak 10 piksel */
+       left: 10px; /* Jarak dari kiri sebanyak 10 piksel */
+   }
+
+   .back-button a {
+       display: inline-block;
+       padding: 10px 20px;
+       text-decoration: none;
+       background-color: #3498db; /* Warna latar belakang tombol */
+       color: #ffffff; /* Warna teks pada tombol */
+       border-radius: 5px; /* Sudut lengkung tombol */
+       border: 1px solid #2980b9; /* Warna border tombol */
+       transition: background-color 0.3s ease; /* Efek transisi saat hover */
+   }
+
+   .back-button a:hover {
+       background-color: #2980b9; /* Warna latar belakang tombol saat hover */
+   }
+   .ch4 {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+   }
+
+   .ch4 a {
+       display: inline-block;
+       padding: 10px 20px;
+       text-decoration: none;
+       background-color: #3498db;
+       color: #ffffff;
+       border-radius: 5px;
+       border: 1px solid #2980b9;
+       transition: background-color 0.3s ease;
+   }
+
+   .ch4 a:hover {
+       background-color: #2980b9;
+   }
+</style>
 <body>
+   <div class="back-button">
+      <a href="./index.html" onclick="history.back()">Back</a>
+  </div>
 
-<header class="header-top bg-dark">
-   <div class="container">
-      <div class="columns is-gapless">
-         <div class="column is-12">
-            <nav class="navbar navigation navigation-dark">
-               <div class="navbar-brand">
-                  <a class="navbar-item" href="index-5.html">
-                     <img src="./theme/images/logo-w.png" alt="">
-                  </a>
-            
-                  <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="menu1">
-                     <span aria-hidden="true"></span>
-                     <span aria-hidden="true"></span>
-                     <span aria-hidden="true"></span>
-                  </a>
-               </div>
-            
-               <div id="menu1" class="navbar-menu">
-                  <div class="navbar-start mr-0">
-                     <div class="navbar-item">
-                        <a class="navbar-link" href="./login">sign in</a>
-                     </div>
-
-                     <div class="navbar-item">
-                        <a class="navbar-link" href="./registrasi">sign up</a>
-                     </div>
-                  </div>
-            
-                  <div class="navbar-end">
-                     <div class="navbar-item">
-                       <div class="search ml-4">
-                           <div class="search_toggle"><i class="ti-search text-white"></i></div>
-                       </div>
-                     </div>
-                  </div>
-               </div>
-            </nav>
-         </div>
-      </div>
-   </div>
-</header>
-
-<!--search overlay start-->
-<div class="search-wrap">
-   <div class="overlay">
-      <form action="#" class="search-form">
-         <div class="container">
-            <div class="columns is-gapless is-mobile is-align-items-center">
-               <div class="column is-10-desktop is-9-mobile">
-                  <input type="text" class="input" placeholder="Search..." />
-               </div>
-               <div class="column is-2-desktop is-3-mobile has-text-right">
-                  <div class="search_toggle toggle-wrap is-inline-block">
-                     <i class="ti-close text-white"></i>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </form>
-   </div>
-</div>
-<!--search overlay end-->
-
-<section class="pt-5 padding-bottom">
-	<div class="container">
-		<div class="columns">
-			<div class="column is-12">
-				<div class="columns">
-	<div class="column is-12">
-		<img src="./theme/images/about.jpg" alt="" class=" w-100">
-	</div>
-</div>
-
-<div class="columns is-justify-content-center mt-6">
-	<div class="column is-12">
-		<div class="columns is-multiline">
-			<div class="column is-4-desktop">
-				<h5 class="is-uppercase letter-spacing mb-5">Who is me?</h5>
-				<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
-					tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat</p>
-
-			</div>
-			<div class="column is-4-desktop">
-				<h5 class="is-uppercase letter-spacing mb-5">My vission</h5>
-				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis biben. Nam nec tellus a odio
-					tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
-			</div>
-			<div class="column is-4-desktop">
-				<h5 class="is-uppercase letter-spacing mb-5">Follow Me :</h5>
-				<div class="follow-socials">
-					<a href="#" class="fb"><i class="ti-facebook"></i></a>
-					<a href="#" class="twt"><i class="ti-twitter"></i></a>
-					<a href="#" class="inst"><i class="ti-instagram"></i></a>
-					<a href="#" class="youtube"><i class="ti-youtube"></i></a>
-					<a href="#" class="pint"><i class="ti-pinterest"></i></a>
-				</div>
-			</div>
-		</div>
-
-		<h3 class="mb-3 mt-6">I have travel 10+ more countries in this year.</h3>
-		<p class="mb-6">Poor Alice! It was as much as she could do, lying down on one side, to look through into the
-			garden with one eye; but to get through was more hopeless than ever: she sat down and began to cry again.</p>
-
-		<div class="columns is-multiline">
-			<div class="column is-3-desktop is-6-tablet">
-				<div class="about-widget">
-					<img src="./theme/images/news/news-1.jpg" alt="" class="">
-					<h4 class="mt-4">Hill ward</h4>
-				</div>
-			</div>
-			<div class="column is-3-desktop is-6-tablet">
-				<div class="about-widget">
-					<img src="./theme/images/news/news-2.jpg" alt="" class="">
-					<h4 class="mt-4">Awesome ride</h4>
-				</div>
-			</div>
-			<div class="column is-3-desktop is-6-tablet">
-				<div class="about-widget">
-					<img src="./theme/images/news/news-3.jpg" alt="" class="">
-					<h4 class="mt-4">Newyork</h4>
-				</div>
-			</div>
-			<div class="column is-3-desktop is-6-tablet">
-				<div class="about-widget">
-					<img src="./theme/images/news/news-4.jpg" alt="" class="">
-					<h4 class="mt-4">Rising Sea</h4>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!--footer start-->
-<footer class="footer-section mt-0 bg-grey">
-    <div class="container">
-        <div class="columns is-multiline">
-            <div class="column is-12 has-text-centered">
-                <div class="mb-5">
-                    <h2 class="footer-logo">Philander News.</h2>
-                </div>
-                <ul class="list-inline footer-socials mb-0">
-                    <li class="list-inline-item"><a href="#"><i class="ti-facebook mr-2"></i>Facebook</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="ti-twitter mr-2"></i>Twitter</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="ti-linkedin mr-2"></i>Linkedin</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="ti-pinterest mr-2"></i>Pinterest</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="ti-github mr-2"></i>Github</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="ti-instagram mr-2"></i>Instrgram</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="ti-rss mr-2"></i>rss</a></li>
-                </ul>
-            </div>
-       
-            <div class="column is-12 has-text-centered">
-               <p class="copyright">© Copyright 2019 - Philander News. All Rights Reserved.</p>
-            </div>
-        </div>
-    </div>
-</footer>
+   <div class="ch4">
+      <a href="ch4/">ch4</a>
+  </div>
 <!--footer end-->
 
 <!-- THEME JAVASCRIPT FILES
