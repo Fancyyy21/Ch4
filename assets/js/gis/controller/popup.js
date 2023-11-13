@@ -45,7 +45,7 @@ export function onSubmitMarkerClick() {
 }
 
 function afterSubmitCOG(result){
-    alert("Referesh page dan CTRL+F untuk mencari apakah data sudah masuk");
+    alert("REFRESH PAGE TRUS CEK DATA UDAH MASUK");
 }
 
 function popupInputMarker(evt) {
