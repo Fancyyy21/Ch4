@@ -12,10 +12,6 @@ import {onClosePopupClick,onDeleteMarkerClick,onSubmitMarkerClick,onMapClick,onM
 import {onClick} from './element.js';
 import {getAllCoordinates} from './gis/controller/cog.js';
 
-window.Login = Login;
-window.Registrasi = Registrasi;
-window.Logout = Logout;
-window.checkCookie = checkCookie;
 
 //gis
 onClick('popup-closer',onClosePopupClick);
