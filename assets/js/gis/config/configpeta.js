@@ -9,8 +9,7 @@ import {container} from 'https://jscroot.github.io/element/croot.js';
 
 const attributions = '<a href="https://befous.github.io/" target="_blank">&copy; Befous Indonesia</a> ';
 
-const place = [103.61061534308766,
-  -1.6272725906014358];
+const place = [108.22714620901979,-6.834770694955694];
 
 export let idmarker = {id:1};
 
